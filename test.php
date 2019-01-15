@@ -1,11 +1,11 @@
 <?php 
     session_start();
     if(isset($_SESSION['usuario'])){
-        if($_SESSION['usuario']['user_name'] != 'test'){
+        if($_SESSION['usuario']['nombre'] != 'desarrollo'){
             header('location: admin.php');
         }
     } else {
-        header('Location: test.php');
+        echo "ok";
     }
 ?>
 <!DOCTYPE html>
