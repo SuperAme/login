@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['usuario'])){
-        if($_SESSION['usuario']['user_name'] == 'test'){
+        if($_SESSION['usuario']['user_name'] == 'desarrollo'){
             header('location: test.php');
         } else if($_SESSION['usuario']['user_name'] == 'admin'){
             header('location: admin.php');

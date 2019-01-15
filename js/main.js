@@ -11,8 +11,9 @@ jQuery(document).on('submit', '#Login', function(event){
     }
     }).done(function(respuesta){
         console.log(respuesta);
+        console.log("test");
         if(!respuesta.error){
-            if(respuesta.tipo == 'test'){
+            if(respuesta.tipo == 'desarrollo'){
                 location.href = 'test.php';
             }else if(respuesta.tipo == 'admin'){
                 location.href = 'admin.php';
